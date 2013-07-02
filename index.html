@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Banorte payworks by netmask</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Banorte payworks</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/netmask/banorte_payworks">View the Project on GitHub <small>netmask/banorte_payworks</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/netmask/banorte_payworks/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/netmask/banorte_payworks/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/netmask/banorte_payworks">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>`    tpv = BanortePayworks::SimpleTPV.new :username =&gt; 'tienda19',
+                                         :password =&gt; '2006',
+                                         :client_id=&gt;'19',
+                                         :mode=&gt;BanortePayworks::MODE[:accept]</p>
+
+<pre><code>transaction = tpv.do_payment(rand(100000),4916098986962263,'12/12','123',1.0)
+tpv.void transaction`
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/netmask">netmask</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
