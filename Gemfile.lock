@@ -1,14 +1,18 @@
 PATH
   remote: .
   specs:
-    banorte_payworks (0.9.3)
+    banorte_payworks (0.9.4)
+      faraday
       httpclient (>= 2.3.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.4)
+    faraday (0.8.7)
+      multipart-post (~> 1.1)
     httpclient (2.3.3)
+    multipart-post (1.2.0)
     rake (10.1.0)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
