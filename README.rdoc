@@ -1,7 +1,22 @@
 = banorte_payworks
 
-Description goes here.
+Banorte payorks is a basic gem to abstract te banorte paywoks interaction 
 
+example
+
+    require 'banorte_payworks'
+
+    tpv = BanortePayworks::SimpleTPV.new :username => 'tienda19',
+                                     :password => '2006',
+                                     :client_id=>'19',
+                                     :mode=>BanortePayworks::MODE[:accept]
+                                     
+    result = tpv.do_payment(rand(100000), '41111111111111111', '12/15', '123', 1.0)
+
+    #this procedure is synchronous, so you will get the response as soon after the gateway respond 
+
+    puts result.authnum
+ 
 {<img src="https://travis-ci.org/netmask/banorte_payworks.png" />}[https://travis-ci.org/netmask/banorte_payworks]
 
 == Contributing to banorte_payworks
