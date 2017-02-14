@@ -18,8 +18,8 @@ class BanorteTransaction
       transaction.time_out = parsed_post['TimeOut'][0]
 
       transaction.e = [parsed_post['E1'][0],
-                    parsed_post['E2'][0],
-                    parsed_post['E3'][0]]
+                       parsed_post['E2'][0],
+                       parsed_post['E3'][0]]
 
       transaction.card_type = parsed_post['CardType'][0]
       transaction.issuing_bank = parsed_post['IssuingBank'][0]
